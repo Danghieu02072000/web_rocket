@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Rocket</title>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white sm:scroll-smooth">
@@ -14,13 +15,26 @@
             <h1 class="text-3xl font-medium">
                 <a href="#">🚀 Acme Rockets</a>
             </h1>
-            <div class=""> <button class="text-3xl sm:hidden focus:outline-none"> &#9776</button>
-                <nav class="hidden sm:block space-x-8 text-xl">
+            <div class=""> 
+                <button class="text-3xl md:hidden focus:outline-none cursor-pointer" id="humbeger"> &#9776</button>
+                <nav class=" hidden md:block space-x-8 text-xl">
                     <a href="#rockets" class="hover:opacity-90"> Our Rocket</a>
                     <a href="#testimonials" class="hover:opacity-90"> Testimonials</a>
                     <a href="#contact" class="hover:opacity-90">Contact Us</a>
                 </nav>
             </div>
+        </section>
+        <section id='mobie-menu' class="absolute top-0 left-0 w-full bg-black text-5xl  flex-col justify-center origin-top animate-open-menu flex">
+            <button id="btn_mobie" class="text-8xl self-end px-6">
+                &times;
+            </button>
+            <nav class="flex flex-col min-h-screen items-center py-8 text-papayawhip-light" aria-label="mobie">
+                <a href="#hero" class="w-full text-center py-6 hover:opacity-90">Home</a>
+                <a href="#rockets" class="w-full text-center py-6 hover:opacity-90">Our Rocket</a>
+                <a href="#testimonials" class="w-full text-center py-6 hover:opacity-90">Testimonials</a>
+                <a href="#contact" class="w-full text-center py-6 hover:opacity-90">Contact Us</a>
+                <a href="#footer" class="w-full text-center py-6 hover:opacity-90">Legal</a>
+            </nav>
         </section>
     </header>
     <main class="max-w-4xl mx-auto">
@@ -129,7 +143,7 @@
             </figure>
         </section>
         <hr class="mx-auto bg-black w-1/2">
-        <section id="contact" class="p-6 my-12 widescreen:section-min-height tallscreen:section-min-height scroll-mt-18">
+        <section id="contact" class="p-6 my-12 widescreen:section-min-height tallscreen:section-min-height scroll-mt-20">
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-slate-300"> Contact Us</h2>
             <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
                 <label for="Subject" class=""> Subject: </label>
